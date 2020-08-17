@@ -54,3 +54,29 @@ class DataFrameNormalizer(BaseEstimator, TransformerMixin):
                 data[column] = (data[column] - training_mean) / training_std  # normalizando (usando el promedio y la desviación estándar de los datos de entrenamiento)
 
         return data
+
+class DataFrameImputerNormalizer(BaseEstimator, TransformerMixin):
+
+    def __init__(self):
+        """Impute missing values.
+
+        Columns of dtype object are imputed with the most frequent value
+        in column.
+
+        Columns of other types are imputed with mean of column.
+
+        """
+    def fit(self, X, y=None):
+        return self
+
+    def transform(self, X, y=None):
+        data = X.copy()
+        data = data.fillna(pd.Series([data[c].value_counts().index[0] if data[c].dtype == np.dtype('O') else data[c].mean() for c in data], index=data.columns))
+
+        for column in data.columns:
+            if not data[column].dtype == np.dtype('O'):
+                training_mean = data[column].mean()
+                training_std = data[column].std()
+                data[column] = (data[column] - training_mean) / training_std  # normalizando (usando el promedio y la desviación estándar de los datos de entrenamiento)
+
+        return data

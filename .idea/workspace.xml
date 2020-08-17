@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="25bb52ea-3fe9-448e-9733-5326f8353708" name="Default Changelist" comment="">
+    <list default="true" id="25bb52ea-3fe9-448e-9733-5326f8353708" name="Default Changelist" comment="Se reorganiza el método de transformación de Nulos">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my_custom_sklearn_transforms/sklearn_transformers.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_custom_sklearn_transforms/sklearn_transformers.py" afterDir="false" />
     </list>
@@ -42,7 +42,7 @@
       <updated>1597685831403</updated>
       <workItem from="1597685832754" duration="77000" />
       <workItem from="1597685929999" duration="535000" />
-      <workItem from="1597686479780" duration="5447000" />
+      <workItem from="1597686479780" duration="7298000" />
     </task>
     <task id="LOCAL-00001" summary="Versión inicial">
       <created>1597686399695</created>
@@ -93,7 +93,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597693019608</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Se reorganiza el método de transformación de Nulos">
+      <created>1597694186029</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1597694186029</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -110,10 +117,10 @@
       <screen x="0" y="0" width="1187" height="720" />
     </state>
     <state x="49" y="16" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1187.720/-1920.0.1920.1050@0.0.1187.720" timestamp="1597686652892" />
-    <state x="148" y="0" key="CommitChangelistDialog2" timestamp="1597693018437">
+    <state x="148" y="0" key="CommitChangelistDialog2" timestamp="1597699477090">
       <screen x="0" y="0" width="1187" height="720" />
     </state>
-    <state x="148" y="0" key="CommitChangelistDialog2/0.0.1187.720/-1920.0.1920.1050@0.0.1187.720" timestamp="1597693018437" />
+    <state x="148" y="0" key="CommitChangelistDialog2/0.0.1187.720/-1920.0.1920.1050@0.0.1187.720" timestamp="1597699477090" />
     <state x="374" y="116" key="FileChooserDialogImpl" timestamp="1597686234007">
       <screen x="0" y="0" width="1187" height="720" />
     </state>
@@ -134,9 +141,9 @@
       <screen x="0" y="0" width="1187" height="720" />
     </state>
     <state x="482" y="275" key="VCS.EditChangelistDialog/0.0.1187.720/-1920.0.1920.1050@0.0.1187.720" timestamp="1597686705217" />
-    <state x="186" y="81" key="Vcs.Push.Dialog.v2" timestamp="1597693021325">
+    <state x="186" y="81" key="Vcs.Push.Dialog.v2" timestamp="1597694187486">
       <screen x="0" y="0" width="1187" height="720" />
     </state>
-    <state x="186" y="81" key="Vcs.Push.Dialog.v2/0.0.1187.720/-1920.0.1920.1050@0.0.1187.720" timestamp="1597693021325" />
+    <state x="186" y="81" key="Vcs.Push.Dialog.v2/0.0.1187.720/-1920.0.1920.1050@0.0.1187.720" timestamp="1597694187486" />
   </component>
 </project>
