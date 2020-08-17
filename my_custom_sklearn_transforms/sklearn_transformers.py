@@ -32,4 +32,25 @@ class DataFrameImputer(BaseEstimator, TransformerMixin):
         return self
 
     def transform(self, X, y=None):
-        return X.fillna(pd.Series([X[c].value_counts().index[0] if X[c].dtype == np.dtype('O') else X[c].mean() for c in X], index=X.columns))
+        data = X.copy()
+        return data.fillna(pd.Series([data[c].value_counts().index[0] if data[c].dtype == np.dtype('O') else data[c].mean() for c in data], index=data.columns))
+
+class DataFrameNormalizer(BaseEstimator, TransformerMixin):
+
+    def __init__(self):
+        """
+        Normalizando los datos numéricos
+        """
+
+    def fit(self, X, y=None):
+        return self
+
+    def transform(self, X, y=None):
+        data = X.copy()
+        for column in data.columns:
+            if not data[column].dtype == np.dtype('O'):
+                training_mean = data[column].mean()
+                training_std = data[column].std()
+                data[column] = (data[column] - training_mean) / training_std  # normalizando (usando el promedio y la desviación estándar de los datos de entrenamiento)
+
+        return data
